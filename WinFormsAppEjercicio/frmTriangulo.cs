@@ -34,7 +34,13 @@ namespace WinFormsAppEjercicio
             {
                 if(txtA.Text == txtB.Text && txtA.Text == txtC.Text && txtB.Text == txtC.Text)
                 {
-                    lbResultado.Text = "Es un triangulo equilatero";
+                    lbResultado.Text = "ES UN TRIANGULO EQUILATERO";
+                }else if(txtA.Text == txtB.Text || txtA.Text == txtC.Text || txtB.Text == txtC.Text)
+                {
+                    lbResultado.Text = "ES UN TRIANGULO ISOSCELES";
+                }else if(txtA.Text != txtB.Text && txtA.Text != txtC.Text && txtB.Text != txtC.Text)
+                {
+                    lbResultado.Text = "ES UN TRIANGULO ESCALENO";
                 }
             }
         }
