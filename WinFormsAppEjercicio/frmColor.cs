@@ -26,5 +26,16 @@ namespace WinFormsAppEjercicio
                 this.BackColor = a.Color;
             }
         }
+
+        private void btnLetra_Click(object sender, EventArgs e)
+        {
+            FontDialog a = new FontDialog();
+            a.ShowColor = true;
+            if (a.ShowDialog() == DialogResult.OK )
+            {
+                txtResultado.Font = a.Font;
+                txtResultado.ForeColor = a.Color;
+            }
+        }
     }
 }
