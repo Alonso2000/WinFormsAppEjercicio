@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.pnlBotones = new System.Windows.Forms.Panel();
-            this.btnTriangulos = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
+            this.btnTriangulos = new System.Windows.Forms.Button();
+            this.btnCombo = new System.Windows.Forms.Button();
             this.pnlBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBotones
             // 
             this.pnlBotones.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBotones.Controls.Add(this.btnCombo);
             this.pnlBotones.Controls.Add(this.btnColor);
             this.pnlBotones.Controls.Add(this.btnTriangulos);
             this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Left;
@@ -44,6 +46,16 @@
             this.pnlBotones.Name = "pnlBotones";
             this.pnlBotones.Size = new System.Drawing.Size(200, 450);
             this.pnlBotones.TabIndex = 0;
+            // 
+            // btnColor
+            // 
+            this.btnColor.Location = new System.Drawing.Point(49, 88);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(98, 45);
+            this.btnColor.TabIndex = 1;
+            this.btnColor.Text = "Colores";
+            this.btnColor.UseVisualStyleBackColor = true;
+            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // btnTriangulos
             // 
@@ -55,15 +67,15 @@
             this.btnTriangulos.UseVisualStyleBackColor = true;
             this.btnTriangulos.Click += new System.EventHandler(this.btnTriangulos_Click);
             // 
-            // btnColor
+            // btnCombo
             // 
-            this.btnColor.Location = new System.Drawing.Point(49, 88);
-            this.btnColor.Name = "btnColor";
-            this.btnColor.Size = new System.Drawing.Size(98, 45);
-            this.btnColor.TabIndex = 1;
-            this.btnColor.Text = "Colores";
-            this.btnColor.UseVisualStyleBackColor = true;
-            this.btnColor.Click += new System.EventHandler(this.btnColor_Click);
+            this.btnCombo.Location = new System.Drawing.Point(49, 158);
+            this.btnCombo.Name = "btnCombo";
+            this.btnCombo.Size = new System.Drawing.Size(98, 45);
+            this.btnCombo.TabIndex = 2;
+            this.btnCombo.Text = "Combo Box";
+            this.btnCombo.UseVisualStyleBackColor = true;
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
             // frmPrincipal
             // 
@@ -85,5 +97,6 @@
         private Panel pnlBotones;
         private Button btnTriangulos;
         private Button btnColor;
+        private Button btnCombo;
     }
 }

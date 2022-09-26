@@ -54,5 +54,29 @@ namespace WinFormsAppEjercicio
                 t.Show();
             }
         }
+
+        private void btnCombo_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "frmCombo")
+                {
+                    this.MdiChildren[0].Close();
+
+                    frmCombo t = new frmCombo();
+                    t.MdiParent = this;
+                    t.Dock = DockStyle.Fill;
+                    t.Show();
+                }
+
+            }
+            else
+            {
+                frmCombo t = new frmCombo();
+                t.MdiParent = this;
+                t.Dock = DockStyle.Fill;
+                t.Show();
+            }
+        }
     }
 }
