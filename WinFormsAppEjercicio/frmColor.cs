@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinFormsAppEjercicio
 {
@@ -15,6 +16,15 @@ namespace WinFormsAppEjercicio
         public frmColor()
         {
             InitializeComponent();
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+            ColorDialog a = new ColorDialog();
+            if (a.ShowDialog() == DialogResult.OK)
+            {
+                this.BackColor = a.Color;
+            }
         }
     }
 }
