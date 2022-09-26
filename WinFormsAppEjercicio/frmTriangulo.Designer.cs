@@ -100,6 +100,7 @@
             this.btnResultado.TabIndex = 6;
             this.btnResultado.Text = "Sera un Triangulo??";
             this.btnResultado.UseVisualStyleBackColor = false;
+            this.btnResultado.Click += new System.EventHandler(this.btnResultado_Click);
             // 
             // lbResultado
             // 
