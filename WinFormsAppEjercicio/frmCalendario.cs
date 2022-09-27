@@ -16,5 +16,17 @@ namespace WinFormsAppEjercicio
         {
             InitializeComponent();
         }
+
+        private void dtp2_ValueChanged(object sender, EventArgs e)
+        {
+            txtResultado.Text = dtp2.Value.ToString("dd/MM/yyyy");
+            mc1.SelectionStart = this.dtp2.Value;
+        }
+
+        private void mc1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            txtResultado.Text = this.mc1.SelectionStart.ToString("dd/MM/yyyy");
+            this.dtp2.Value = mc1.SelectionStart;
+        }
     }
 }
