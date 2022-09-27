@@ -29,15 +29,17 @@
         private void InitializeComponent()
         {
             this.pnlBotones = new System.Windows.Forms.Panel();
+            this.btnCombo = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.btnTriangulos = new System.Windows.Forms.Button();
-            this.btnCombo = new System.Windows.Forms.Button();
+            this.btnCalendar = new System.Windows.Forms.Button();
             this.pnlBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBotones
             // 
             this.pnlBotones.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBotones.Controls.Add(this.btnCalendar);
             this.pnlBotones.Controls.Add(this.btnCombo);
             this.pnlBotones.Controls.Add(this.btnColor);
             this.pnlBotones.Controls.Add(this.btnTriangulos);
@@ -46,6 +48,16 @@
             this.pnlBotones.Name = "pnlBotones";
             this.pnlBotones.Size = new System.Drawing.Size(200, 450);
             this.pnlBotones.TabIndex = 0;
+            // 
+            // btnCombo
+            // 
+            this.btnCombo.Location = new System.Drawing.Point(49, 158);
+            this.btnCombo.Name = "btnCombo";
+            this.btnCombo.Size = new System.Drawing.Size(98, 45);
+            this.btnCombo.TabIndex = 2;
+            this.btnCombo.Text = "Combo Box";
+            this.btnCombo.UseVisualStyleBackColor = true;
+            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
             // 
             // btnColor
             // 
@@ -67,15 +79,15 @@
             this.btnTriangulos.UseVisualStyleBackColor = true;
             this.btnTriangulos.Click += new System.EventHandler(this.btnTriangulos_Click);
             // 
-            // btnCombo
+            // btnCalendar
             // 
-            this.btnCombo.Location = new System.Drawing.Point(49, 158);
-            this.btnCombo.Name = "btnCombo";
-            this.btnCombo.Size = new System.Drawing.Size(98, 45);
-            this.btnCombo.TabIndex = 2;
-            this.btnCombo.Text = "Combo Box";
-            this.btnCombo.UseVisualStyleBackColor = true;
-            this.btnCombo.Click += new System.EventHandler(this.btnCombo_Click);
+            this.btnCalendar.Location = new System.Drawing.Point(49, 234);
+            this.btnCalendar.Name = "btnCalendar";
+            this.btnCalendar.Size = new System.Drawing.Size(98, 45);
+            this.btnCalendar.TabIndex = 3;
+            this.btnCalendar.Text = "Calendario";
+            this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // frmPrincipal
             // 
@@ -98,5 +110,6 @@
         private Button btnTriangulos;
         private Button btnColor;
         private Button btnCombo;
+        private Button btnCalendar;
     }
 }
