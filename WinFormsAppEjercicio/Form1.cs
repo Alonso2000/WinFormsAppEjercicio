@@ -126,5 +126,29 @@ namespace WinFormsAppEjercicio
                 t.Show();
             }
         }
+
+        private void btnCuadro_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "frmCuadro")
+                {
+                    this.MdiChildren[0].Close();
+
+                    frmCuadro t = new frmCuadro();
+                    t.MdiParent = this;
+                    t.Dock = DockStyle.Fill;
+                    t.Show();
+                }
+
+            }
+            else
+            {
+                frmCuadro t = new frmCuadro();
+                t.MdiParent = this;
+                t.Dock = DockStyle.Fill;
+                t.Show();
+            }
+        }
     }
 }
