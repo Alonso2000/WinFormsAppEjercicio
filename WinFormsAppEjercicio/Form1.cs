@@ -102,5 +102,29 @@ namespace WinFormsAppEjercicio
                 t.Show();
             }
         }
+
+        private void btnRadio_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "frmRadio")
+                {
+                    this.MdiChildren[0].Close();
+
+                    frmRadio t = new frmRadio();
+                    t.MdiParent = this;
+                    t.Dock = DockStyle.Fill;
+                    t.Show();
+                }
+
+            }
+            else
+            {
+                frmRadio t = new frmRadio();
+                t.MdiParent = this;
+                t.Dock = DockStyle.Fill;
+                t.Show();
+            }
+        }
     }
 }
