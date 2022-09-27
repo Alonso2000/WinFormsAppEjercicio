@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             this.pnlBotones = new System.Windows.Forms.Panel();
+            this.btnCalendar = new System.Windows.Forms.Button();
             this.btnCombo = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.btnTriangulos = new System.Windows.Forms.Button();
-            this.btnCalendar = new System.Windows.Forms.Button();
+            this.btnRadio = new System.Windows.Forms.Button();
             this.pnlBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBotones
             // 
             this.pnlBotones.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBotones.Controls.Add(this.btnRadio);
             this.pnlBotones.Controls.Add(this.btnCalendar);
             this.pnlBotones.Controls.Add(this.btnCombo);
             this.pnlBotones.Controls.Add(this.btnColor);
@@ -48,6 +50,16 @@
             this.pnlBotones.Name = "pnlBotones";
             this.pnlBotones.Size = new System.Drawing.Size(200, 450);
             this.pnlBotones.TabIndex = 0;
+            // 
+            // btnCalendar
+            // 
+            this.btnCalendar.Location = new System.Drawing.Point(49, 234);
+            this.btnCalendar.Name = "btnCalendar";
+            this.btnCalendar.Size = new System.Drawing.Size(98, 45);
+            this.btnCalendar.TabIndex = 3;
+            this.btnCalendar.Text = "Calendario";
+            this.btnCalendar.UseVisualStyleBackColor = true;
+            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
             // 
             // btnCombo
             // 
@@ -79,15 +91,15 @@
             this.btnTriangulos.UseVisualStyleBackColor = true;
             this.btnTriangulos.Click += new System.EventHandler(this.btnTriangulos_Click);
             // 
-            // btnCalendar
+            // btnRadio
             // 
-            this.btnCalendar.Location = new System.Drawing.Point(49, 234);
-            this.btnCalendar.Name = "btnCalendar";
-            this.btnCalendar.Size = new System.Drawing.Size(98, 45);
-            this.btnCalendar.TabIndex = 3;
-            this.btnCalendar.Text = "Calendario";
-            this.btnCalendar.UseVisualStyleBackColor = true;
-            this.btnCalendar.Click += new System.EventHandler(this.btnCalendar_Click);
+            this.btnRadio.Location = new System.Drawing.Point(49, 299);
+            this.btnRadio.Name = "btnRadio";
+            this.btnRadio.Size = new System.Drawing.Size(98, 45);
+            this.btnRadio.TabIndex = 4;
+            this.btnRadio.Text = "Radio";
+            this.btnRadio.UseVisualStyleBackColor = true;
+            this.btnRadio.Click += new System.EventHandler(this.btnRadio_Click);
             // 
             // frmPrincipal
             // 
@@ -111,5 +123,6 @@
         private Button btnColor;
         private Button btnCombo;
         private Button btnCalendar;
+        private Button btnRadio;
     }
 }
