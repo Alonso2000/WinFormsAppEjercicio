@@ -78,5 +78,29 @@ namespace WinFormsAppEjercicio
                 t.Show();
             }
         }
+
+        private void btnCalendar_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "frmCalendario")
+                {
+                    this.MdiChildren[0].Close();
+
+                    frmCalendario t = new frmCalendario();
+                    t.MdiParent = this;
+                    t.Dock = DockStyle.Fill;
+                    t.Show();
+                }
+
+            }
+            else
+            {
+                frmCalendario t = new frmCalendario();
+                t.MdiParent = this;
+                t.Dock = DockStyle.Fill;
+                t.Show();
+            }
+        }
     }
 }
