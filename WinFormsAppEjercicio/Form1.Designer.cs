@@ -29,18 +29,20 @@
         private void InitializeComponent()
         {
             this.pnlBotones = new System.Windows.Forms.Panel();
+            this.btnCuadro = new System.Windows.Forms.Button();
             this.btnRadio = new System.Windows.Forms.Button();
             this.btnCalendar = new System.Windows.Forms.Button();
             this.btnCombo = new System.Windows.Forms.Button();
             this.btnColor = new System.Windows.Forms.Button();
             this.btnTriangulos = new System.Windows.Forms.Button();
-            this.btnCuadro = new System.Windows.Forms.Button();
+            this.btnTimer = new System.Windows.Forms.Button();
             this.pnlBotones.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBotones
             // 
             this.pnlBotones.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlBotones.Controls.Add(this.btnTimer);
             this.pnlBotones.Controls.Add(this.btnCuadro);
             this.pnlBotones.Controls.Add(this.btnRadio);
             this.pnlBotones.Controls.Add(this.btnCalendar);
@@ -50,8 +52,18 @@
             this.pnlBotones.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlBotones.Location = new System.Drawing.Point(0, 0);
             this.pnlBotones.Name = "pnlBotones";
-            this.pnlBotones.Size = new System.Drawing.Size(200, 450);
+            this.pnlBotones.Size = new System.Drawing.Size(200, 513);
             this.pnlBotones.TabIndex = 0;
+            // 
+            // btnCuadro
+            // 
+            this.btnCuadro.Location = new System.Drawing.Point(49, 373);
+            this.btnCuadro.Name = "btnCuadro";
+            this.btnCuadro.Size = new System.Drawing.Size(98, 45);
+            this.btnCuadro.TabIndex = 5;
+            this.btnCuadro.Text = "Cuadro de texto";
+            this.btnCuadro.UseVisualStyleBackColor = true;
+            this.btnCuadro.Click += new System.EventHandler(this.btnCuadro_Click);
             // 
             // btnRadio
             // 
@@ -103,21 +115,21 @@
             this.btnTriangulos.UseVisualStyleBackColor = true;
             this.btnTriangulos.Click += new System.EventHandler(this.btnTriangulos_Click);
             // 
-            // btnCuadro
+            // btnTimer
             // 
-            this.btnCuadro.Location = new System.Drawing.Point(49, 373);
-            this.btnCuadro.Name = "btnCuadro";
-            this.btnCuadro.Size = new System.Drawing.Size(98, 45);
-            this.btnCuadro.TabIndex = 5;
-            this.btnCuadro.Text = "Cuadro de texto";
-            this.btnCuadro.UseVisualStyleBackColor = true;
-            this.btnCuadro.Click += new System.EventHandler(this.btnCuadro_Click);
+            this.btnTimer.Location = new System.Drawing.Point(49, 441);
+            this.btnTimer.Name = "btnTimer";
+            this.btnTimer.Size = new System.Drawing.Size(98, 45);
+            this.btnTimer.TabIndex = 6;
+            this.btnTimer.Text = "Timer";
+            this.btnTimer.UseVisualStyleBackColor = true;
+            this.btnTimer.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1003, 450);
+            this.ClientSize = new System.Drawing.Size(1003, 513);
             this.Controls.Add(this.pnlBotones);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
@@ -137,5 +149,6 @@
         private Button btnCalendar;
         private Button btnRadio;
         private Button btnCuadro;
+        private Button btnTimer;
     }
 }
