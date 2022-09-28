@@ -150,5 +150,29 @@ namespace WinFormsAppEjercicio
                 t.Show();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (this.MdiChildren.Length > 0)
+            {
+                if (this.MdiChildren[0].Name != "frmTimer")
+                {
+                    this.MdiChildren[0].Close();
+
+                    frmTimer t = new frmTimer();
+                    t.MdiParent = this;
+                    t.Dock = DockStyle.Fill;
+                    t.Show();
+                }
+
+            }
+            else
+            {
+                frmTimer t = new frmTimer();
+                t.MdiParent = this;
+                t.Dock = DockStyle.Fill;
+                t.Show();
+            }
+        }
     }
 }
