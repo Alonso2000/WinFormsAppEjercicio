@@ -112,9 +112,9 @@
             // 
             this.txtContrasenia.Location = new System.Drawing.Point(146, 226);
             this.txtContrasenia.Name = "txtContrasenia";
-            this.txtContrasenia.PasswordChar = '*';
             this.txtContrasenia.Size = new System.Drawing.Size(254, 23);
             this.txtContrasenia.TabIndex = 7;
+            this.txtContrasenia.TextChanged += new System.EventHandler(this.txtContrasenia_TextChanged);
             // 
             // btnFoco
             // 

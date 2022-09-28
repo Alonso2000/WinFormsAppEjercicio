@@ -57,5 +57,10 @@ namespace WinFormsAppEjercicio
                 txtContrasenia.UseSystemPasswordChar = true;
             }
         }
+
+        private void txtContrasenia_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
